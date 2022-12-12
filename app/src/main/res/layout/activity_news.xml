@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/transparent"
     tools:context=".NewsActivity">
 
     <FrameLayout
@@ -17,17 +18,23 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
+
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
-        app:menu="@menu/bottom_navigation_menu"
         android:layout_width="match_parent"
         android:layout_height="56dp"
+
+        app:menu="@menu/bottom_navigation_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemRippleColor="@android:color/transparent"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconTint="@drawable/item_selector"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -44,11 +51,3 @@
 
 
 
-    <!--        <androidx.fragment.app.FragmentContainerView-->
-    <!--            android:id="@+id/newsNavHostFragment"-->
-    <!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
-    <!--            android:layout_width="409dp"-->
-    <!--            android:layout_height="673dp"-->
-    <!--            app:defaultNavHost="true"-->
-    <!--            app:navGraph="@navigation/news_nav_graph"-->
-    <!--            tools:layout="@layout/activity_news" />-->

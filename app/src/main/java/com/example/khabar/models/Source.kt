@@ -1,4 +1,4 @@
-package com.example.khabar
+package com.example.khabar.models
 
 data class Source(
     val id: String,
